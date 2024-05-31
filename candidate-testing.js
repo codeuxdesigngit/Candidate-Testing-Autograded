@@ -40,7 +40,7 @@ function gradeQuiz(candidateAnswers) {
 
   let numberQuiz = candidateAnswers.length;
 
-console.log("\nQUIZ RESULT\n");
+console.log("\nCANDIDATE QUIZ RESULT\n");
 
 for (let i = 0; i < numberQuiz; i++ ) {
   if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
@@ -52,7 +52,6 @@ for (let i = 0; i < numberQuiz; i++ ) {
   console.log(`Correct Answer: ${correctAnswers[i]}`);
 
 }
-
 
   let grade = (numberCorrect / numberQuiz) * 100;  
   let status = "PASSED";
