@@ -40,10 +40,17 @@ function gradeQuiz(candidateAnswers) {
 
   let numberQuiz = candidateAnswers.length;
 
+console.log("\nQUIZ RESULT\n");
+
 for (let i = 0; i < numberQuiz; i++ ) {
-  if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLocaleLowerCase()) {
+  if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
     numberCorrect +=1;
   }
+
+  console.log(`${i + 1}. ${questions[i]}`);
+  console.log(`Your Answer: ${candidateAnswers[i]}`);
+  console.log(`Correct Answer: ${correctAnswers[i]}`);
+
 }
 
 
@@ -54,7 +61,6 @@ for (let i = 0; i < numberQuiz; i++ ) {
     status = "FAILED";
   }
   
-
   console.log("\n\n>>> Overall Grade: " + grade + "%" + " <<<" );
 
   console.log("\n>>> Correct Answers: " + numberCorrect + " of " + numberQuiz + " <<<");
