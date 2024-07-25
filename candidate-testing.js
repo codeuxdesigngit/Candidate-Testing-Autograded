@@ -25,7 +25,7 @@ let candidateAnswers = [];
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-  candidateName = input.question("Hello Candidate, write your name: ");
+  candidateName = input.question("Write your name: ");
 }
 
 function askQuestion() {
